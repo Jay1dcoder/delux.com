@@ -1,81 +1,50 @@
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .header{
-    margin-top:20px;
-    font-size:20px;
-    display:grid;
-    grid-template-columns: auto auto;
+  /* margin-top:20px; */
+  font-size:20px;
+  display:grid;
+  grid-template-columns: auto auto;
+  padding: 2px;
+  background-color: greenyellow;
+  font-weight: bolder;
+  align-items: center;
+  position:sticky;
+  top: 0;
 }
 .logo{
-    margin-left: 2em;
-    font-weight: bold;
-    color:royalblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:25px;
-    text-shadow: 3px 3px 10px green;
+  margin-left: 2em;
+  font-weight: bold;
+  color:royalblue;
+  font-family: 'serif';
+  font-size:35px;
+  text-shadow: 3px 3px 5px orange;
 }
 nav{
-    display: inline-block;
-    margin-left: 25em;
-    overflow: hidden;
-    margin-top:4px;
-}
-nav .links{
-    margin:20px;
-    text-decoration: none;
-    text-align: center;
-    color:black;
-}
-nav .links:hover{
-    color:white;
-    text-shadow: 2px 2px 5px #000000;
-    font-size:23px;
-}
-nav .links:focus{
-    color:darkred;
-}
-.dropdown {
-  float: right;
+  /* display: flex;
+  flex-direction: row; */
+  margin-left: 15em;
   overflow: hidden;
-  margin-right: 110px;
+  margin-top:4px;
+  font-family: 'serif';
+  float:right
 }
-.dropdown .dropbtn {
-  font-size: inherit;  
-  border: none;
-  outline: none;
-  color: inherit;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0px;
-}
-.dropdown .dropbtn:hover{
-    color:white;
-    text-shadow: 2px 2px 5px #000000;
-    font-size:23px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
+nav > a{
+  margin:21px;
   text-decoration: none;
-  display: block;
-  text-align: left;
+  text-align: center;
+  /* color:black; */
+  color: darkorange;
+  cursor: pointer;
 }
-.dropdown-content a:hover {
-  background-color: #ddd;
+nav > a:hover{
+  text-decoration: none;
   color:white;
-            text-shadow: 2px 2px 5px #000000;
+  text-shadow: 2px 2px 5px #000000;
+  font-size:23px;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
+nav > a:focus{
+  color:darkred;
 }
