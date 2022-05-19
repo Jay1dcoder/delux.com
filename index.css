@@ -2,6 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: greenyellow;
+}
+::-webkit-scrollbar-thumb{
+  background: orange;
+}
 .header{
   /* margin-top:20px; */
   font-size:20px;
