@@ -20,8 +20,9 @@
   background-color: greenyellow;
   font-weight: bolder;
   align-items: center;
-  position:sticky;
+  position:fixed;
   top: 0;
+  width: 100%;
 }
 .logo{
   margin-left: 2em;
@@ -57,3 +58,8 @@ nav > a:hover{
 nav > a:focus{
   color:darkred;
 }
+/* .sticky{
+  position: fixed;
+  top: o;
+  width: 100%;
+} */

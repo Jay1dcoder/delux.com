@@ -7,20 +7,22 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
-    $(document).ready(function() {
+  $(document).ready(function() {
 
-        $(".btn").mouseenter(function(){
+        $(".btn").click(function(){
             $(this).text(" DELUX HOTEL");
-            $(this).css({"margin-left":"170px"});
-            $(".btn").click(function(){
-                $(this).slideUp(10000);
+            $(this).css({"text-align":"center","padding":"10px","border":"3px outset #FF0000","margin-left":"auto"});
+
+            $(".btn").dblclick(function(){
                 window.location.href="landing.html";
             })
         });
-        $(".btn").mouseleave(function(){
+
+        $(".btn").dblclick(function(){
             location.reload();
         });
-    })
+
+  })
 </script>
 </head>
 <body>
@@ -30,27 +32,54 @@
         padding: 0px;
     }
     .header{
-  display:none;
-
+        display:none;
     }
     .welcome{
         padding: 310px;
-        background-image: linear-gradient(to top, purple,royalblue);
+        background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     }
     .btn{
-        /*margin-left: 0px; */
-        margin-top: -50px;
         position: absolute;
         font-size: 50px;
         font-weight: bold;
         font-family: serif;
         color: purple;
-        outline: 10px outset #FF0000;
+        border: 2px inset #FF0000;
+        background-color:white;
     }
     .btn:hover{
         color: blue;
-        outline: 10px inset #FF0000;
+        outline: 1px inset #FF0000;
     }
+    @media screen and (max-width:900px) and (min-width:200px){
+        body{
+        padding: 0px;
+        margin: 0px;
+        background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+        .welcome{
+        padding: 0px;
+        display: inline-block;
+        background-image: none;
+        align-items: center;
+        width: 100%;
+    }
+        .btn{
+        margin-left: auto;
+        margin-top: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: serif;
+        color: purple;
+        outline: none;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
 </style>
 <div class="welcome">
     <button class="btn">WELCOME TO DELUX HOTELS</button>
