@@ -427,35 +427,7 @@ function test($data){
 </head>
 <body>
 
-    <div id="toTop"></div>
-
-    <!-- <p style="background-image: url('./Images/surface-pmYzYkB2JcI-unsplash.jpg');">
-        You can specify background images<br>
-        for any visible HTML element.<br>
-        In this example, the background image<br>
-        is specified for a p element.<br>
-        By default, the background-image<br>
-        will repeat itself in the direction(s)<br>
-        where it is smaller than the element<br>
-        where it is specified. (Try resizing the<br>
-        browser window to see how the<br>
-        background image behaves.
-        </p> -->
-        <!-- <i class="fas fa-envelope-square"></i>
-        <i class="fas fa-envelope-square"></i>
-        <i class="fab fa-facebook-f"></i>
-     -->
-        <section class="contact_head">
-            <img src="Images/contact.jpg" height="200px" width="100%" alt="Contact us image">
-            <div class="contact_bg">
-                <h2 class="contact_contact">Contact Us</h2><br>
-                 <ol class="contact_list">
-                    <li><a href="3" class="contact_first_list contact_font" style="width: 10px; text-decoration: none;">Home &nbsp;</a></li>
-                    <li class="active">/ &nbsp; Contact</li>
-                 </ol> 
-            </div>
-        </section>
-    
+    <div id="toTop"></div>    
     <h1 class="contact">If you have any questions, please don't hesitate to contact us.</h1>
 
     <div class="try">
