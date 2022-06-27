@@ -13,8 +13,8 @@
             $(this).text(" DELUX HOTEL");
             $(this).css({"text-align":"center","padding":"10px","border":"3px outset #FF0000","margin-left":"auto"});
 
-            $(".btn").dblclick(function(){
-                window.location.href="landing.html";
+            $(".btn").click(function(){
+                window.location.href="landing.php";
             })
         });
 

@@ -450,7 +450,7 @@ function test($data){
             <div class="contact_bg">
                 <h2 class="contact_contact">Contact Us</h2><br>
                  <ol class="contact_list">
-                    <li><a href="3" class="contact_first_list contact_font" style="width: 10px; text-decoration: none;">Home &nbsp;</a></li>
+                    <li><a href="landing.php" class="contact_first_list contact_font" style="width: 10px; text-decoration: none;">Home &nbsp;</a></li>
                     <li class="active">/ &nbsp; Contact</li>
                  </ol> 
             </div>
