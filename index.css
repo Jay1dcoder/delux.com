@@ -7,6 +7,7 @@
 }
 ::-webkit-scrollbar-track{
   background-color: greenyellow;
+  background-color: red;
 }
 ::-webkit-scrollbar-thumb{
   background: orange;
@@ -63,3 +64,66 @@ nav > a:focus{
   top: o;
   width: 100%;
 } */
+
+
+
+/*Custom properties*/
+
+:root {
+  --dark-color: #2d2c2c;
+  --purple-solid: #350a4f;
+  --purple-transparent: rgba(53, 10, 79, .7);
+  --purple-transparent-alt: rgba(53, 10, 79, .5);
+  --purple-light: #8f50fb;
+  --yellow-solid: #fa9e2c;
+  /* --red-solid: #fa0e0e; */
+  --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+  --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}*
+
+/* Booking section styles...Seun */
+.booking{
+  background-image: var(--gradient-color);
+}
+.input-group{
+  margin-bottom: 1.5rem;
+}
+.input-label{
+  /* this will make make anything besides the label go down to the next line */
+  display: block;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* setting outline to none, will remove highlight from the inputs */
+.input,
+.options{
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 4rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: #a5a5a5;
+  letter-spacing: 2px;
+  font-family: 'open sans', 'sans-serif';
+  /* resize: none; */
+}
+
+.form-btn{
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.btn-purple{
+  background-color: var(--purple-solid);
+}
+.btn-purple:hover{
+  background-color: #56247f;
+}
+
+::placeholder{
+color:  inherit;
+}
