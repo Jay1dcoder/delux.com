@@ -29,7 +29,7 @@
 <td class="table-form">
         <h1 class="columns">Get in touch</h1>
     
-        <form action="processingcontact.php" method ="POST" style="max-width:500px; margin:auto">
+        <form action="contactfunc.php" method ="POST" style="max-width:500px; margin:auto">
             <div class="input-container">
             <i class="fa fa-envelope icon"></i>
             <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email address" class="form-control"><br><br>
