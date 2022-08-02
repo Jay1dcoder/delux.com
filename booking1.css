@@ -1,0 +1,81 @@
+/*Custom properties*/
+
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    /* --red-solid: #fa0e0e; */
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), orangered);
+    --gradient-color-alt: linear-gradient(crimson, green, blue,royalblue );
+  }*
+  
+  /* Booking section styles...Seun */
+  .booking{
+    /* background-image: var(--gradient-color); */
+
+  }
+  .logo{
+    margin-left: 2em;
+    font-weight: bold;
+    color:royalblue;
+    font-family: 'serif';
+    font-size:35px;
+    text-shadow: 3px 3px 5px orange;
+  }
+  marquee{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
+  }
+  .input-group{
+    margin-bottom: 1.5rem;
+  }
+  .input-label{
+    /* this will make make anything besides the label go down to the next line */
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    /* color: #fff; */
+    margin-bottom: 1rem;
+    background-image: var(--gradient-color-alt);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    line-height: 1em;
+    margin-left: 2px;
+    font-weight: 900;
+  }
+  /* setting outline to none, will remove highlight from the inputs */
+  .input,.options{
+    outline: none;
+    border: none;
+    width: 97%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: 'open sans', 'sans-serif';
+    font-size: 1.2rem;
+    /* resize: none; */
+  }
+  
+  .form-btn{
+    margin-top: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .btn-purple{
+    background-color: var(--purple-solid);
+  }
+  .btn-purple:hover{
+    background-color: #56247f;
+  }
+  
+  ::placeholder{
+  color:  inherit;
+  }
+  
