@@ -12,12 +12,12 @@
     --gradient-color-alt: linear-gradient(crimson, green, blue,royalblue );
   }*
   
-  /* Booking section styles...Seun */
+  /* Booking section styles...Seun 
   .booking{
-    /* background-image: var(--gradient-color); */
+   background-image: var(--gradient-color); */
 
-  }
-  .logo{
+  
+    .logo{
     margin-left: 2em;
     font-weight: bold;
     color:royalblue;
@@ -30,16 +30,16 @@
     font-style: italic;
     font-size: 20px;
   }
-  .input-group{
+  /* .input-group{
     margin-bottom: 1.5rem;
   }
   .input-label{
     /* this will make make anything besides the label go down to the next line */
-    display: block;
+    /* display: block;
     font-size: 1.3rem;
     text-transform: uppercase;
     /* color: #fff; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem;
     background-image: var(--gradient-color-alt);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -47,9 +47,9 @@
     line-height: 1em;
     margin-left: 2px;
     font-weight: 900;
-  }
+  } */ 
   /* setting outline to none, will remove highlight from the inputs */
-  .input,.options{
+  /* .input,.options{
     outline: none;
     border: none;
     width: 97%;
@@ -60,10 +60,10 @@
     letter-spacing: 2px;
     font-family: 'open sans', 'sans-serif';
     font-size: 1.2rem;
-    /* resize: none; */
-  }
+    /* resize: none; 
+  } */
   
-  .form-btn{
+  /* .form-btn{
     margin-top: 2.5rem;
     cursor: pointer;
   }
@@ -77,5 +77,111 @@
   
   ::placeholder{
   color:  inherit;
+  */
+/* body{
+    background: url(images/photo5.jpg);
+  }  */
+  .container{
+    /* margin-top: 2%; */
+    /* margin-bottom: 5%; */
+    margin-left: 10%;
   }
-  
+  .container h1{
+    text-align: center;
+    color: white;
+  }
+  .booking{
+    width: 400px;
+    height: 650px;
+    background-color: #2d2c2c;
+    background-size: cover;
+    background-position: center;
+     background-image: url(images/photo4.jpg);
+     float: left;
+     border: 40px 0px 0px 40px;
+     
+  }
+  .form{
+    width: 600px;
+    height: 650px;
+    background-image: linear-gradient(130deg, #607ad1, #9ed3d9 60%);
+    padding: 30px;
+    box-sizing: border-box;
+    float: left;
+    border:0px 40px 40px 0px ;
+    padding-top: 8% ;
+    
+  }
+  .container-2{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }  
+  .input-left{
+    flex-basis: 45%;
+  }
+  .input-right{
+    flex-basis: 45%;
+  }
+ .input{
+    width: 60%;
+    padding: 13px;
+    margin: 15px 0;
+    font-size: 15px;
+    outline: none;
+  } 
+.output-label,.output{
+  display: block;
+  margin-left: 35%;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+  .form label{
+    align-items: left;
+    font-size: 20px;
+  }
+
+  .output{
+    width: 50%;
+    padding: 13px;
+    align-items: center;
+    font-size: 15px;
+    outline: none;
+    margin-left: 20%;
+    /* margin-right: 3%; */
+    display: inline-block;
+  }  
+
+ .form h2{
+    text-align: center;
+    margin: 5%;
+  }
+  .check-b{
+    /* margin-right: 5%; */
+    margin-left: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5%;
+  }
+
+  .check{
+    font-size: 10px;
+  }
+  button{
+    font-size: 25px;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    /* margin-left: 30%; */
+    color: white;
+    background: black;
+    /* border-radius: 5%; */
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+   /* RESPONSIVENESS */
+   
