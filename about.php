@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delux Hotels</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about1.css">
     <script src="https://kit.fontawesome.com/af621931a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -16,28 +16,18 @@
 </head>
 
 <body>
-<div class="header" id="header">
 
-<span class="logo"> <b>DELUX HOTEL</b></span>
+<?php
+require 'header.php'
+?>
 
-        <nav>
-            <a href="" class="links">Home</a>
-            <a href="booking.php" class="links">Booking</a>
-            <a href="contact.php" class="links">Contact Us</a>
-            <a href="" class="links">Location</a>
-                <a href="signup.php" class="links" >Sign Up</a>
-                <a href="login1.php" class="links" >Login</a>
-        </nav>
-
-</div>
-
-<section class="about-ban">
+<!-- <section class="about-ban">
 <div class="about-banner"> 
     <h1>About US</h1><br>
    <div class="home-link"> <a href="landing.html"> Home </a>  /About Us</div>
    
 </div>
-</section>
+</section> -->
 <br><br>
 
 <section class="about-con">

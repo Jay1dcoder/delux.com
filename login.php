@@ -2,20 +2,29 @@
     require 'dml.php';
     $validation = new Database_query();
     $validation->login();
-
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/> -->
     <script src="https://kit.fontawesome.com/b32f1a67cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="signup.css">
     </head>
 <style>
-    .stay{
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
+.stay
+{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.information
+{
+    color: crimson;
+    text-align: center;
+    text-transform: capitalize;
+    background-color:lightgray;
+    font-size: 20px;
+    font-weight: bolder;
 }
 </style>
     <body>
@@ -24,21 +33,16 @@
          <form method="POST" action=""><br><br>
                     <i class="fas fa-user icon"></i>
 
-                    <div name="message">
+                    <div name="message" class="information">
                         <?php 
                         if(isset($_SESSION["message"]))
                         {
                             echo $_SESSION['message'];
                             $_SESSION["message"] = "";
                         }
-                        // if(isset($_GET["msg"]))
-                        // {
-                        //     echo strtoupper($_GET["msg"]);
-                        //      $_GET["msg"] = "";
-                        // }
                         ?>
                     </div>
-
+<br>
                 <div class="form-input">
                     <input type="text" placeholder="Username" name="uname">
                     <input type="password" placeholder="Password" name="password">

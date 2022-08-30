@@ -203,7 +203,7 @@ class booking{
                     $sql2 = "UPDATE room SET status = 'reserved' WHERE room_id ='$this->room_id'";
                     $query2 = mysqli_query($conn->connection,$sql2);
 
-                      if($query2) { echo "query 2 done"; }
+                      if($query2) { header("Location:myreservation.php"); }
                       else { die(mysqli_error($conn->connection)); }
                   }
                   else
@@ -219,10 +219,10 @@ class booking{
   
                     if($query)
                     {
-                      $sql2 = "UPDATE room  SET status = 'reserved' WHERE room_id ='$this->room_id'";
-                      $query2 = mysqli_query($conn->connection,$sql2);
+                      $sql3 = "UPDATE room  SET status = 'reserved' WHERE room_id ='$this->room_id'";
+                      $query3 = mysqli_query($conn->connection,$sql3);
 
-                        if($query2) { echo "query 2 done"; }
+                        if($query3) { header("Location:myreservation.php"); }
                         else { die(mysqli_error($conn->connection)); }
 
                     }
@@ -236,10 +236,27 @@ class booking{
         }
 
       function display_reservation()
-      {}
+      {
+
+      }
 
       function delete_reservation()
-      {}
+      {
+        $conn = new Database_query();
+
+        $reservation_id = $_GET['rid'];
+        $sql = "DELETE FROM room_reservation WHERE reservation_id = '$reservation_id'";
+        $query = mysqli_query($conn->connection,$sql);
+
+        if($query)
+        {
+          header("Location:myreservation.php");
+        }
+        else
+        { 
+          die(mysqli_error($conn->connection));
+        }
+      }
 
       function password_reset()
       {

@@ -59,6 +59,7 @@
             </form>
     </div>
 </section>
+
 <script type="text/javascript">
         const nav = document.querySelector("#header");
             window.addEventListener("scroll", () => {
@@ -73,6 +74,7 @@
                 window.open("http://localhost/delux2/delux.com-main/login1.php","_blank","left=500")
             }
 </script>
+
     <!-- <script>
 window.console.error("You made a mistake");
 </script> -->
